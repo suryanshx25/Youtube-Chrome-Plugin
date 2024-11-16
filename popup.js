@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             </div>
           </div>
           <div class="section">
-            <div class="section-title">Top 25 Comments with Sentiments</div>
+            <div class="section-title">Top 100 Comments with Sentiments</div>
             <ul class="comment-list">
-              ${comments.slice(0, 25).map((comment, index) => `
+              ${comments.slice(0, 100).map((comment, index) => `
                 <li class="comment-item">
                   <span>${index + 1}. ${comment}</span><br>
                   <span class="comment-sentiment">Sentiment: ${predictions[index]}</span>
